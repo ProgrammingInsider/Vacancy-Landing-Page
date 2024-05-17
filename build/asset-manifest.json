@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/static/css/main.c2c3d8b7.css",
+    "main.js": "/static/js/main.5765487a.js",
+    "static/media/image 1.jpg": "/static/media/image 1.c5f409df6b497e9e741f.jpg",
+    "static/media/image 2.jpg": "/static/media/image 2.2607ba4338b129a125f0.jpg",
+    "static/media/bell.svg": "/static/media/bell.9140c586308898284f84c259d10363cb.svg",
+    "static/media/book.svg": "/static/media/book.06a7afc1474828b4d218e7b79a2b3e66.svg",
+    "static/media/image.svg": "/static/media/image.905c966af9e71f76725e337c7ab404bf.svg",
+    "index.html": "/index.html",
+    "static/media/cotation.svg": "/static/media/cotation.56c6f5a82474147d88cf4ff6886288d4.svg",
+    "static/media/person.svg": "/static/media/person.aaf59cf442330dcce094216f039f2947.svg",
+    "static/media/mobile.svg": "/static/media/mobile.86aabfcb9efcd253934ac19458b98438.svg",
+    "static/media/home.svg": "/static/media/home.055160235011681e1f0f843c261a25d8.svg",
+    "static/media/result.svg": "/static/media/result.79587e29f02f1ff4d9447dd6ecb5d527.svg",
+    "static/media/keyboard.svg": "/static/media/keyboard.f5f231a39f64868eec224ec5d2c15b58.svg",
+    "main.c2c3d8b7.css.map": "/static/css/main.c2c3d8b7.css.map",
+    "main.5765487a.js.map": "/static/js/main.5765487a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c2c3d8b7.css",
+    "static/js/main.5765487a.js"
+  ]
+}

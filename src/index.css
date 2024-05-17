@@ -1,0 +1,680 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+}
+
+:root{
+
+  /* Colors */
+  --primaryColor:#00c9cd;
+  --primaryColor-1:#00cbac;
+   --linear-bg: linear-gradient(to bottom, #00cbac, #00c9cd);
+   --white-color: #ffffff;
+   --black-color: #000000;
+   --max-width:1300px;
+   --min-width:70%;
+
+   /* Grey Color */
+   --gray-50: #f9fafb;
+   --gray-100: #f3f4f6;
+   --gray-200: #e5e7eb;
+   --gray-300: #d1d5db;
+   --gray-400: #9ca3af;
+   --gray-500: #6b7280;
+   --gray-600: #4b5563;
+   --gray-700: #374151;
+   --gray-800: #1f2937;
+   --gray-900: #111827;
+   --gray-950: #030712;
+
+   /* border shadow */
+   --box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+
+
+}
+
+
+html {font-size: 16px;} 
+
+body {
+  background: white;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  line-height: 1.75;
+  color: var(--gray-600);
+  overflow-x: hidden;
+}
+
+p {
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+
+}
+
+h1, h2, h3, h4, h5 {
+  margin: 0rem 0 1.38rem;
+  /* font-family: 'Playfair Display', serif; */
+  font-weight: 400;
+  line-height: 1.3;
+  color: var(--gray-950);
+
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 2.5rem;
+}
+
+h2 {font-size: 2rem;}
+
+h3 {font-size: 1.5rem;}
+
+h4 {font-size: 1.363rem;}
+
+h5 {font-size: 1.25rem;}
+
+small, .text_small {font-size: 0.8rem;}
+
+.bold{
+  font-weight: bold;
+  color: var(--gray-800);
+}
+
+.italic{
+  font-style: italic;
+}
+
+.primaryText{
+  color: var(--primaryColor);
+  font-weight: bold;
+}
+
+.btn{
+  border: none;
+  outline: none;
+  padding: 1em 2.3em;
+  font-size: 1rem;
+  border-radius: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  display: block;
+  max-width: 200px;
+  width: 80%;
+  margin: 1em;
+  cursor: pointer;
+}
+
+@media screen and (min-width:700) {
+  .btn{
+    font-size: 1.1rem;
+  }
+}
+
+.btn:hover{
+  opacity: .9;
+}
+
+.btn1{
+  background-color: var(--primaryColor);
+  color: var(--white-color);
+  font-weight: bold;  
+}
+
+.btn2{
+   color: var(--primaryColor);
+   border: 1px solid var(--primaryColor);
+   background-color: transparent;
+}
+
+.horzontalCenter{
+  margin: auto;
+  margin-top: 1em;
+}
+
+/* Hero style start */
+.Hero{
+  height: 85vh;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin: auto;
+  margin-bottom: 4em;
+  
+}
+
+.HeroHeadline{
+  width: 100%;
+  max-width: 550px;
+  background-color: var(--gray-50);
+  padding: 1em;
+  padding-top: 2em;
+}
+
+.logoContainer{
+  display: flex;
+  align-items: center;
+  height: 50px;
+  width: 100%;
+}
+
+.logo{
+  width: 60px;
+  margin-right: 1em;
+}
+
+.logoName{
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  height: 100%;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin: 0;
+  width: 100%;
+}
+
+.headlineDesc{
+  font-size: 1.5rem;
+  margin-top: 1em;
+  line-height: 1.5em;
+  width: 100%;
+}
+
+.heroImageContainer{
+  max-width: 1000px;
+  height: 100%;
+  width: 100%;
+  margin-left: -30%;
+  z-index: -1;
+}
+
+.heroImage{
+  width:100%;
+  height:100%;
+  object-fit: cover;
+}
+
+
+@media screen and (min-width:750px) {
+  .HeroHeadline{
+    width: 100%;
+    margin-left: 10%;
+  }
+  .headlineDesc{
+    font-size: 2.5rem;
+  }
+  .logoName{
+    font-size: 1.2rem;
+  }
+  .heroImageContainer{
+    margin-left: -10%;
+  }
+  
+  .headlineBtn{
+    display: flex;
+  }
+  
+}
+/* Hero style end */
+
+
+/* List of Skills And Offers style start*/
+
+.lists{
+   width: var(--min-width);
+   max-width: var(--max-width);
+   margin: auto;
+   margin-top: 1em;
+}
+
+.listContainer{
+  display: grid;
+  justify-content: left;
+  gap: 5px;
+}
+
+.eachListContainer{
+  line-height: 2.2em;
+}
+
+.eachListContainer:nth-child(1){
+  margin-bottom: 15px;
+}
+
+.eachList{
+  position: relative;
+  max-width: 400px;
+  font-size: 1rem;
+}
+
+.eachList::before{
+  content: "✔ ";
+
+}
+
+.listsHeader{
+  color: var(--gray-600);
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+
+.greyBg{
+  background-color: var(--gray-100);
+  padding: 5em 0;
+  margin-top: 5em;
+}
+
+.offerListsHeader{
+  text-align: center;
+}
+
+.strongPointContainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1em;
+}
+
+.eachStrongPoint{
+  background-color: var(--white-color);
+  width: 200px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em;
+  margin-bottom: 1.5em;
+  border-radius: 20px;
+}
+
+.offerIconContainer{
+  width: 100px;
+  height: 100px;
+  background-color: var(--gray-100);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.offerIcon{
+  width: 50px;
+}
+
+.strongPointName{
+  margin-top: .5em;
+}
+
+@media screen and (min-width:750px) {
+  .listContainer{
+   grid-template-columns: 1fr 1fr;
+  }
+
+  .listsHeader{
+    color: var(--gray-600);
+    font-size: 1.8rem;
+  }
+
+  .offerListsHeader{
+    text-align: left;
+  }
+
+  .strongPointContainer{
+    gap: 20px;
+    flex-direction: row;
+  }
+
+  .eachList{
+    font-size: 1.1rem;
+  }
+
+  .strongPointName{
+      font-size: 1.1rem;
+  }
+
+}
+/* List of Skills And Offers style end*/
+
+/* Service style start */
+.service{
+  width: var(--min-width);
+  max-width: var(--max-width);
+  margin: auto;
+  margin-top: 100px;
+}
+
+.serviceHeroContainer{
+  margin-bottom: 2em;
+}
+
+.serviceHero{
+ position: relative;
+ display: block;
+ z-index: -1;
+}
+
+.serviceHeroImage{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.serviceStaticContainer{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: -50px;
+  z-index: 2;
+}
+
+.serviceStatic{
+  width: 120px;
+  height: 120px;
+  /* width: 100px;
+  height: 100px; */
+  background-color: white;
+  box-shadow: var(--box-shadow);
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  margin: .5%;
+  padding: 1em;
+}
+
+.staticNumber{
+  font-size: 1.8rem;
+  margin: 0;
+}
+
+.staticName{
+  width: 100%;
+  margin: 0;
+  text-align: center;
+  font-size: 1rem;
+}
+
+.aboutusPara{
+  font-size: .9rem;
+  text-align: center;
+  max-width: 1000px;
+}
+
+.aboutusHeader{
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  text-align: center;
+  margin: 2em 0;
+}
+
+.serviceContainer{
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.eachService{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1em;
+  margin-right: 3em;
+  width: 100%;
+}
+
+.serviceIconContainer{
+  width: 60px;
+  margin-right: 20px;
+}
+
+.serviceIcon{
+  width: 100%;
+}
+
+.eachServiceHeader{
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  margin-bottom: .2em;
+  color: var(--primaryColor);
+  font-weight: bold
+}
+
+.eachServicePara{
+  font-size: .9rem;
+}
+
+.eachProofContainer{
+  display: grid;
+  gap: 10px;
+  justify-content: space-between;
+}
+
+.eachProof{
+  background-color: var(--white-color);
+  box-shadow: var(--box-shadow);
+  padding: 1em;
+  margin-bottom: 3em;
+  border-radius: 20px;
+  width: 100%;
+  max-width: 400px;
+}
+
+.cotationIcon{
+  width: 60px;
+  display: block;
+  margin: auto;
+}
+
+.proofPara{
+  font-size: 1rem;
+  text-align: center;
+}
+
+.proofName{
+  font-weight: bold;
+  text-align: center;
+  font-size: 1.1rem;
+}
+
+@media screen and (min-width:250px){
+  .serviceStatic{
+    width: 70px;
+    height: 70px;
+    font-size: .5rem;
+    margin: .2%;
+    padding: 1em;
+  }
+  
+  .staticNumber{
+    font-size: 1.2rem;
+    margin: 0;
+  }
+  .staticName{
+    font-size: .5rem;
+  }
+  
+
+}
+
+
+@media screen and (min-width:750px) {
+
+  .serviceStatic{
+    width: 130px;
+    height: 130px;
+  }
+  .staticNumber{
+    font-size: 2rem;
+  }
+  .serviceContainer{
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr 1fr;
+  }
+  .eachProofContainer{
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: 1fr 1fr;
+  }
+  .aboutusPara{
+    font-size: 1.1rem;
+  }  
+  .eachService{
+    margin-right: 3em;
+  }
+  .staticName{
+    font-size: 1rem;
+  }
+  
+}
+
+/* Service style end */
+
+
+/* Contactus style start */
+
+.gradientBg{
+  padding: 2em 0;
+   background-image: var(--linear-bg);
+   margin-top: 3em;
+}
+
+.contactus{
+  width: var(--min-width);
+  max-width: var(--max-width);
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.contactusHeader{
+  color: var(--white-color);
+  text-transform: uppercase;
+  font-size: 2rem;
+  text-align: center;
+  margin: 0;
+  margin-bottom: .2em;
+}
+
+.contactusHeaderBold{
+  color: var(--white-color);
+}
+
+.salary{
+  font-size: 1.7rem;
+  text-align: center;
+  margin: 0;
+  margin-bottom: .5em;
+}
+.contactBtn{
+  background-color: var(--white-color);
+  color: var(--primaryColor);
+}
+
+.contactForm{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  width: 100%;
+}
+
+.contactFormLabel{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: var(--white-color);
+  text-transform: uppercase;
+  margin-top: 1em;
+  width: 100%;
+}
+
+.contactFormInput{
+  border: none;
+  outline: none;
+  font-size: 1.5rem;
+  padding: .5em;
+  border-radius: 20px;
+  background-color: #0b9782;
+  position: relative;
+  color: var(--gray-50);
+  font-size: bold;
+}
+
+.fileInput{
+   display: none;
+}
+
+.browseBtn{
+  background-color: var(--gray-400);
+  font-size: .8rem;
+  padding: .1em;
+  border-radius: 5px;
+  text-transform: capitalize;
+  float: right;
+  cursor: pointer;
+}
+
+@media screen and (min-width:900px) {
+  .contactusHeader{
+    color: var(--white-color);
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    text-align: center;
+    margin: 0;
+    margin-bottom: .2em;
+  }
+  
+  .contactus{
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .contactForm{
+    width: 50%;
+    margin-left: 2em;
+  }
+}
+
+/* Contactus style end */
+
+/* Footer Style start */
+
+.footerContent{
+  background-color: var(--gray-700);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+}
+
+.footerText{
+  font-size: .9rem;
+  color: white;
+  font-weight: 500;
+  text-align: center;
+}
+
+.authorName{
+  color: var(--btn-bg);
+}
+
+.authorPosition{
+  color: var(--shape-color);
+  text-decoration: underline;
+  cursor: pointer;
+  font-size: .9em;
+}
+/* Footer Style end */
+
+
